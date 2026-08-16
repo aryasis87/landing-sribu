@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import MotionProvider from "./components/MotionProvider";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -52,7 +53,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable}`}
       >
-        <main>{children}</main>
+        <main><MotionProvider>{children}</MotionProvider></main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(__jsonld) }} />
         </body>
     </html>

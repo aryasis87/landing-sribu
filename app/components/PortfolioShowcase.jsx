@@ -38,7 +38,7 @@ const PortfolioShowcase = () => {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-gray-50">
+    <section className="py-16 md:py-24 bg-cream">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Headline Section */}
         <motion.div 
@@ -48,10 +48,10 @@ const PortfolioShowcase = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-arena mb-4">
             Anda akan mendapatkan desain seperti ini saat bekerja dengan desainer berbakat secara online
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-sepia max-w-3xl mx-auto">
             Lihat bukti kualitas dari ribuan desain profesional yang telah kami hasilkan untuk klien ternama
           </p>
         </motion.div>
@@ -62,7 +62,7 @@ const PortfolioShowcase = () => {
             <motion.div
               key={item.id}
               whileHover={{ y: -5 }}
-              className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow"
+              className="bg-cream rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow"
             >
               <div className="relative overflow-hidden h-48">
                 <img 
@@ -73,15 +73,15 @@ const PortfolioShowcase = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
               </div>
               <div className="p-4">
-                <span className="inline-block px-2 py-1 text-xs font-medium text-blue-600 bg-blue-50 rounded-full mb-2">
+                <span className="inline-block px-2 py-1 text-xs font-medium text-ember bg-ember/12 rounded-full mb-2">
                   {item.category}
                 </span>
-                <h3 className="font-semibold text-gray-900 mb-2">{item.title}</h3>
+                <h3 className="font-semibold text-arena mb-2">{item.title}</h3>
                 <a
                   href={item.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center text-sm text-blue-600 hover:text-blue-800"
+                  className="inline-flex items-center text-sm text-ember hover:text-ember"
                 >
                   Lihat detail <FiExternalLink className="ml-1" />
                 </a>
@@ -102,12 +102,12 @@ const PortfolioShowcase = () => {
             href="https://www.sribu.com/id/portfolio-contest"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 transition-colors"
+            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-cream bg-ember hover:bg-ember transition-colors"
           >
             Lihat Portfolio Lengkap di Sribu
             <FiExternalLink className="ml-2" />
           </a>
-          <p className="mt-4 text-sm text-gray-500">
+          <p className="mt-4 text-sm text-sepia">
             * Klik untuk melihat ratusan contoh desain profesional
           </p>
         </motion.div>

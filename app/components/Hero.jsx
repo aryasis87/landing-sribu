@@ -43,11 +43,11 @@ const Hero = () => {
     alignItems: 'center',
     padding: '0.75rem 2rem',
     borderRadius: '0.5rem',
-    background: '#3b82f6',
+    background: '#b34114',
     color: 'white',
     fontWeight: 600,
     transition: 'all 0.3s ease',
-    boxShadow: '0 4px 6px -1px rgba(59, 130, 246, 0.3)'
+    boxShadow: '0 4px 6px -1px rgba(179, 65, 20, 0.3)'
   };
 
   const featureGridStyle = {

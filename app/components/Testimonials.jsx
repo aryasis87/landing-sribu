@@ -12,7 +12,7 @@ const Testimonials = () => {
       company: 'PT Maju Jaya',
       rating: 5,
       comment: 'Desain logo yang saya dapatkan sangat profesional. Prosesnya cepat dan desainer sangat mengerti kebutuhan bisnis saya.',
-      avatar: 'https://randomuser.me/api/portraits/men/32.jpg'
+      avatar: '/images/p1.jpg'
     },
     {
       id: 2,
@@ -20,7 +20,7 @@ const Testimonials = () => {
       company: 'Toko Online Ani',
       rating: 5,
       comment: 'Saya puas dengan hasil desain kemasan produknya. Revisi dilakukan dengan cepat dan hasilnya sesuai ekspektasi.',
-      avatar: 'https://randomuser.me/api/portraits/women/44.jpg'
+      avatar: '/images/p2.jpg'
     },
     {
       id: 3,
@@ -28,7 +28,7 @@ const Testimonials = () => {
       company: 'Startup Teknologi',
       rating: 4,
       comment: 'Platform yang memudahkan saya menemukan desainer berbakat. Hasil website company profile kami sangat memuaskan.',
-      avatar: 'https://randomuser.me/api/portraits/men/67.jpg'
+      avatar: '/images/p3.jpg'
     }
   ];
 
@@ -37,13 +37,13 @@ const Testimonials = () => {
     return Array(5).fill(0).map((_, i) => (
       <FiStar 
         key={i} 
-        className={`${i < rating ? 'text-yellow-400 fill-yellow-400' : 'text-gray-300'} w-5 h-5`} 
+        className={`${i < rating ? 'text-yellow-400 fill-yellow-400' : 'text-sepia'} w-5 h-5`} 
       />
     ));
   };
 
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section className="py-16 md:py-24 bg-cream">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div 
@@ -53,10 +53,10 @@ const Testimonials = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-arena mb-4">
             Apa Kata Klien Kami?
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-sepia max-w-3xl mx-auto">
             Testimonial jujur dari klien yang telah menggunakan layanan Sribu
           </p>
         </motion.div>
@@ -70,7 +70,7 @@ const Testimonials = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
-              className="bg-gray-50 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
+              className="bg-cream rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
             >
               <div className="flex items-center mb-4">
                 <img 
@@ -79,14 +79,14 @@ const Testimonials = () => {
                   className="w-12 h-12 rounded-full object-cover mr-4"
                 />
                 <div>
-                  <h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
-                  <p className="text-sm text-gray-500">{testimonial.company}</p>
+                  <h4 className="font-semibold text-arena">{testimonial.name}</h4>
+                  <p className="text-sm text-sepia">{testimonial.company}</p>
                 </div>
               </div>
               <div className="flex mb-4">
                 {renderStars(testimonial.rating)}
               </div>
-              <p className="text-gray-600 mb-4">"{testimonial.comment}"</p>
+              <p className="text-sepia mb-4">"{testimonial.comment}"</p>
             </motion.div>
           ))}
         </div>
@@ -103,12 +103,12 @@ const Testimonials = () => {
             href="https://www.sribu.com/id/testimonial" 
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors"
+            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-cream bg-ember hover:bg-ember transition-colors"
           >
             Lihat Lebih Banyak Testimonial
             <FiExternalLink className="ml-2" />
           </a>
-          <p className="mt-4 text-sm text-gray-500">
+          <p className="mt-4 text-sm text-sepia">
             Anda bisa melihat testimonial kami di halaman ini
           </p>
         </motion.div>

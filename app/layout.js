@@ -12,10 +12,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const __jsonld = {"@context":"https://schema.org","@type":"WebSite","name":"Sribu","description":"Platform kontes desain","url":"https://sribu.pintuweb.com","inLanguage":"id"};
+const __jsonld = {"@context":"https://schema.org","@type":"WebSite","name":"Sribu","description":"Platform kontes desain","url":"https://landing-sribu.vercel.app","inLanguage":"id"};
 
 export const metadata = {
-  metadataBase: new URL("https://sribu.pintuweb.com"),
+  metadataBase: new URL("https://landing-sribu.vercel.app"),
   title: "Sribu — Platform Desain Kontes Terbaik",
   description: "Sribu: temukan desainer berbakat dan dapatkan desain profesional melalui kontes desain online.",
   applicationName: "Sribu",
@@ -23,11 +23,11 @@ export const metadata = {
   authors: [{ name: "Sribu" }],
   creator: "Sribu",
   publisher: "Sribu",
-  alternates: { canonical: "https://sribu.pintuweb.com" },
+  alternates: { canonical: "https://landing-sribu.vercel.app" },
   openGraph: {
     type: "website",
     locale: "id_ID",
-    url: "https://sribu.pintuweb.com",
+    url: "https://landing-sribu.vercel.app",
     siteName: "Sribu",
     title: "Sribu — Platform Desain Kontes Terbaik",
     description: "Sribu: temukan desainer berbakat dan dapatkan desain profesional melalui kontes desain online.",

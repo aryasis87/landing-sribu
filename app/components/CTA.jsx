@@ -9,8 +9,7 @@ const CTA = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle email submission logic here
-    console.log('Email submitted:', email);
+    // Halaman contoh: email tidak dikirim ke mana pun (lihat pesan sukses).
     setIsSubmitted(true);
   };
 
@@ -61,7 +60,17 @@ const CTA = () => {
               className="bg-cream p-6 rounded-lg shadow-md inline-block"
             >
               <h3 className="text-xl font-semibold text-arena mb-2">Terima kasih!</h3>
-              <p className="text-sepia">Panduan telah dikirim ke email Anda.</p>
+              <p className="text-sepia">
+                Ini halaman contoh, jadi tidak ada email yang dikirim.{' '}
+                <a
+                  href={`https://wa.me/6281339908765?text=${encodeURIComponent('Halo PintuWeb, saya mau landing page seperti contoh Sribu.')}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-arena underline underline-offset-2"
+                >
+                  Mau landing page seperti ini?
+                </a>
+              </p>
             </motion.div>
           )}
 

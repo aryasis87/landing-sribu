@@ -1,29 +1,30 @@
-# Sribu — Platform Desain Kontes Terbaik
+# Sribu — Konsep Redesain Tidak Resmi
 
-Sribu: temukan desainer berbakat dan dapatkan desain profesional melalui kontes desain online.
+Konsep redesain tidak resmi landing page Sribu oleh PintuWeb: kontes desain sebagai sayembara, dengan simulasi “Coba jadi juri”. **Tidak berafiliasi dengan Sribu.**
 
 **Demo live:** https://landing-sribu.vercel.app
 
 ![Tangkapan layar Sribu](public/og.jpg)
 
-> Template landing page untuk bisnis fiktif. Formulir di dalamnya hanya demo dan tidak mengirim data.
+> Latihan desain ulang untuk portofolio. Nama Sribu milik pemiliknya; kontes, desainer, karya, dan angka di halaman ini fiktif dan tidak menggambarkan layanan, harga, atau kebijakan Sribu. Halaman diberi `noindex` agar tidak bersaing dengan situs resminya di mesin pencari.
 
 ## Konsep
 
-Bahasa rupa **Sayembara**: arena kontes desain yang ramai. Sengaja dijauhkan dari Bribu, kembarannya yang bernada tenang.
+Bahasa rupa **Sayembara**: lembar penjurian dengan karya bernomor, catatan juri tulisan tangan, cap pemenang, dan kertas krem.
 
 ## Halaman
 
-`/`
+- `/` — hero sayembara, empat tahap kontes, simulasi “Coba jadi juri” (tandai 3 finalis → tetapkan pemenang), panduan kapan kontes cocok
+- `/catatan-redesain` — studi kasus: hero sebelum, enam masalah & keputusan, spesimen huruf, palet dengan rasio kontras yang dihitung
 
 ## Teknologi
 
 - Next.js 15.5 (App Router) dan React 19
 - Tailwind CSS v4
 - JavaScript
-- Framer Motion, React Icons
-- Font: Geist, Geist Mono (next/font)
-- SEO: metadata per halaman, Open Graph, JSON-LD, sitemap.xml, dan robots.txt
+- Sembilan karya contoh digambar dengan SVG (tanpa karya pihak lain)
+- Font: Big Shoulders, Kalam, Geist (next/font)
+- Metadata per halaman, Open Graph, JSON-LD (CreativeWork), `noindex`
 
 ## Menjalankan secara lokal
 

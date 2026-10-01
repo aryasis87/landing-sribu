@@ -1,7 +1,6 @@
 export default function robots() {
   return {
     rules: { userAgent: "*", allow: "/" },
-    sitemap: "https://landing-sribu.vercel.app/sitemap.xml",
     host: "https://landing-sribu.vercel.app",
   };
 }

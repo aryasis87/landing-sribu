@@ -1,23 +1,14 @@
-import Hero from "./components/Hero";
-import Problem from "./components/Problem";
-import ComparisonChart from "./components/ComparisonChart";
-import PortfolioShowcase from "./components/PortfolioShowcase";
-import Testimonials from "./components/Testimonials";
-import CTA from "./components/CTA";
-import Reason from "./components/Reason";
-import AboutUs from "./components/AboutUs";
+import { CatatanTeaser, Cara, Cocok, Hero } from "./components/Beranda";
+import Penjurian from "./components/Penjurian";
 
 export default function Home() {
   return (
-    <main className="max-w-screen overflow-hidden">
+    <main>
       <Hero />
-      <Problem />
-      <Reason />
-      <ComparisonChart />
-      <PortfolioShowcase />
-      <Testimonials />
-      <CTA />
-      <AboutUs />
+      <Cara />
+      <Penjurian />
+      <Cocok />
+      <CatatanTeaser />
     </main>
   );
 }

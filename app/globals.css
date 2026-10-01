@@ -15,6 +15,7 @@
   --color-cream-2: #efe4d2;
   --color-sepia: #55452f;      /* teks sekunder */
   --color-ember: #9c380f;      /* jingga sayembara */
+  --color-ember-light: #e2a37e; /* jingga di atas arang */
   --color-laurel: #3f5730;     /* hijau juri */
 }
 
@@ -26,7 +27,7 @@
   }
   h1, h2, h3 {
     font-family: var(--font-geist-sans), system-ui, sans-serif;
-    letter-spacing: -0.035em;
+    letter-spacing: -0.01em;
     font-weight: 700;
   }
 }
